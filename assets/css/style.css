@@ -112,6 +112,20 @@ nav{
     font-size: 20px;
 }
 
+.link1:hover{
+    transform: scale(1.3) rotate(10deg);
+}
+
+.link2:hover{
+    transform: scale(1.3) rotate(10deg);
+}
+
+.link3:hover{
+    transform: scale(1.3) rotate(10deg);
+}
+.link4:hover{
+    transform: scale(1.3) rotate(10deg);
+}
 
 h1{
     font-size: 45px;
@@ -162,13 +176,13 @@ h2{
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     height: 100%;
-    animation-name: color;
+    animation-name: colorcard;
     animation-duration: 3s;
     filter: grayscale(0%);
     
 }
 
-@keyframes color{
+@keyframes colorcard{
     from{
         filter: grayscale(0%);
     }
@@ -180,7 +194,7 @@ h2{
 
 .card:hover{
     transform: scale(1.07);
-    animation:color ease-in-out forwards;
+    animation:colorcard ease-in forwards
 }
 
 
@@ -242,6 +256,7 @@ h2{
     color: chocolate;
     padding: 40px 10px;
     gap: 4px;
+    font-size: large;
 }
 
 .but1:hover{
@@ -337,7 +352,13 @@ h2{
 
     .bars i{
         color: chocolate;
+        transition: color 1s;
         }
+
+    .bar:hover{
+        color: rgb(100, 52, 17)
+
+    }
 
     main{
         display: flex;
